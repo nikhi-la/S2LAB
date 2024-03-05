@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Q2Product
+class Q2ProductSingleClass
 {
 	Scanner s=new Scanner(System.in);
 
