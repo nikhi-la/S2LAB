@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Matrix
+class MatrixAddition
 {
 
 	//Input Matrix
@@ -50,13 +50,13 @@ class Matrix
 	}
 }
 
-class MatrixAddition
+class Question4
 {
 	public static void main(String args[])
 	{
 		Scanner s=new Scanner(System.in);
 		
-		Matrix m=new Matrix();
+		MatrixAddition m=new MatrixAddition();
 		int[][] a=new int[10][10];
 		int[][] b=new int[10][10];
 		int[][] result=new int[10][10];
