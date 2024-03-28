@@ -67,10 +67,10 @@ class Question4
 		int c=s.nextInt();
 
 
-		System.out.println("Enter Matrix 1");
+		System.out.println("Enter Matrix 1 ( "+r*c+" elements )");
 		a=m.acceptMatrix(r,c);
 
-		System.out.println("Enter Matrix 2"); 
+		System.out.println("Enter Matrix 2 ( "+r*c+" elements )"); 
 		b=m.acceptMatrix(r,c);
 
 		result=m.sum(a,b,r,c);
