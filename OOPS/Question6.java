@@ -14,14 +14,6 @@ class Person
 		this.address=address;
 		this.age=age;	
 	}
-
-	void display()
-	{
-		System.out.println("Name          : "+ name);
-		System.out.println("Gender        : "+ gender);
-		System.out.println("Address       : "+ address);
-		System.out.println("Age           : "+ age);
-	}
 }
 
 class Employee extends Person
@@ -38,16 +30,7 @@ class Employee extends Person
 		this.company_name=company_name;
 		this.qualification=qualification;
 		this.salary=salary;
-	}
-
-	void display()
-	{
-		super.display();
-		System.out.println("Employee Id   : "+ emp_id);
-		System.out.println("Company Name  : "+ company_name);
-		System.out.println("Qualification : "+ qualification);
-		System.out.println("Salary        : "+ salary+" Rs.");
-	}
+	}	
 }
 
 class Teacher extends Employee
@@ -66,7 +49,14 @@ class Teacher extends Employee
 
 	void display()
 	{
-		super.display();
+		System.out.println("Name          : "+ name);
+		System.out.println("Gender        : "+ gender);
+		System.out.println("Address       : "+ address);
+		System.out.println("Age           : "+ age);
+		System.out.println("Employee Id   : "+ emp_id);
+		System.out.println("Company Name  : "+ company_name);
+		System.out.println("Qualification : "+ qualification);
+		System.out.println("Salary        : "+ salary+" Rs.");
 		System.out.println("Subject       : "+ subject);
 		System.out.println("Department    : "+ department);
 		System.out.println("Teacher Id    : "+ id);
@@ -75,7 +65,6 @@ class Teacher extends Employee
 
 
 class Question6
-
 {
 	public static void main(String args[])
 	{
@@ -137,5 +126,4 @@ class Question6
 			t[i].display();
 		}
 	}
-
 }
