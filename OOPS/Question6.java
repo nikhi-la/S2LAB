@@ -89,30 +89,41 @@ class Question6
 		for(int i=0;i<n;++i)
 		{
 			System.out.println("\nTeacher "+(i+1)+"\n");
+
 			System.out.println("Enter Name");
 			s.nextLine();
 			String name=s.nextLine();
+
 			System.out.println("Enter Gender");
 			String gender=s.next();
+
 			System.out.println("Enter Address");
 			s.nextLine();
 			String address=s.nextLine();
+
 			System.out.println("Enter Age");
 			int age=s.nextInt();
+
 			System.out.println("Enter Employee Id");
 			int emp_id=s.nextInt();
+
 			System.out.println("Enter Company Name");
 			s.nextLine();
 			String company_name=s.nextLine();
+
 			System.out.println("Enter Qualification");
 			String qualification=s.nextLine();
+
 			System.out.println("Enter Salary");
 			int salary=s.nextInt();
+
 			System.out.println("Enter Subject");
 			s.nextLine();
 			String subject=s.nextLine();
+
 			System.out.println("Enter Department");
 			String department=s.nextLine();
+
 			System.out.println("Enter Teacher Id");
 			int teacherid=s.nextInt();
 
