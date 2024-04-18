@@ -64,7 +64,7 @@ class Teacher extends Employee
 }
 
 
-class Question6
+class Question10
 {
 	public static void main(String args[])
 	{
