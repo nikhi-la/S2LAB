@@ -13,7 +13,7 @@ class Employee
 	}
 }
 
-class Program8
+class Question8
 {
 	public static void main(String args[])
 	{
