@@ -47,7 +47,7 @@ class Rectangle implements Area
 	}
 } 
 
-class Program7
+class Question9
 {
 	public static void main(String args[])
 	{ 
