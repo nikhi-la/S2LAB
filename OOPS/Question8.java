@@ -44,11 +44,11 @@ class Question8
 
 		for( int i=0;i<n;++i)
 		{
-            e[i]=new Employee();
+           		e[i]=new Employee();
 
 			System.out.println("\nEnter details for  Employee "+(i+1)+"\n");
 
-            e[i].getDetails();		
+            		e[i].getDetails();		
 		}
 		
 
@@ -62,7 +62,7 @@ class Question8
 			if(e[i].eNo==srch)
 			{	
 				System.out.println("\n--------Record Found for Employee Number "+srch+"--------\n");
-                e[i].display();			
+               			e[i].display();			
 				
 				flag=1;
 				break;
