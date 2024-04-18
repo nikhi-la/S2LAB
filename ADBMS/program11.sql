@@ -1,11 +1,11 @@
 set serveroutput on
 declare
 	n number(3);
-	i number(3):=2;
+	i number(3);
 	fact number(4):=1;
 begin
 	n:=&n;
-	if(n=2)
+	if(n<1)
 	then
 		fact:=1;
 	else
