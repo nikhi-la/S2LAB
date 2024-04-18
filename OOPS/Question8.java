@@ -5,12 +5,29 @@ class Employee
 	int eNo,eSalary;
 	String eName;
 	
-	Employee(int no,String name,int salary)
-	{
-		eNo=no;
-		eName=name;
-		eSalary=salary;
-	}
+    void getDetails()
+    {
+        Scanner s1=new Scanner(System.in);
+
+        System.out.println("Enter Employee no.");
+        eNo=s1.nextInt();
+
+        System.out.println("Enter Employee Name.");
+        s1.nextLine();
+        eName=s1.nextLine();
+        
+        System.out.println("Enter Employee Salary.");
+        eSalary=s1.nextInt();
+    }
+
+    void display()
+    {
+        System.out.println("Employee Number : "+eNo);
+
+        System.out.println("Employee Name : "+eName);
+
+        System.out.println("Employee Salary : "+eSalary+" Rs.");
+    }
 }
 
 class Question8
@@ -27,19 +44,11 @@ class Question8
 
 		for( int i=0;i<n;++i)
 		{
+            e[i]=new Employee();
+
 			System.out.println("\nEnter details for  Employee "+(i+1)+"\n");
 
-			System.out.println("Enter Employee no.");
-			int eno=s.nextInt();
-
-			System.out.println("Enter Employee Name.");
-			s.nextLine();
-			String ename=s.nextLine();
-			
-			System.out.println("Enter Employee Salary.");
-			int esalary=s.nextInt();
-
-			e[i]=new Employee(eno,ename,esalary);
+            e[i].getDetails();		
 		}
 		
 
@@ -53,12 +62,7 @@ class Question8
 			if(e[i].eNo==srch)
 			{	
 				System.out.println("\n--------Record Found for Employee Number "+srch+"--------\n");
-
-				System.out.println("Employee Number : "+e[i].eNo);
-	
-				System.out.println("Employee Name : "+e[i].eName);
-
-				System.out.println("Employee Salary : "+e[i].eSalary+" Rs.");
+                e[i].display();			
 				
 				flag=1;
 				break;
