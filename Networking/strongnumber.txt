@@ -1,0 +1,27 @@
+#prime or not
+factorial()
+{
+  fact=1
+  for((i=2;i<=$1;++i))
+  do
+    fact=$(($fact*i))
+  done
+  return $fact
+}
+
+read num
+x=$num
+sum=0
+while [ $num -gt 0 ]
+do
+    ld=$(($num%10))
+    factorial $ld
+    sum=$(($sum+$?))
+    num=$(($num/10))
+done
+if [ $x -eq $sum ]
+then
+  echo $x" is a strong number"
+else
+  echo $x" is not a strong number"
+fi
