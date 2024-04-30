@@ -1,0 +1,29 @@
+#!/bin/bash
+echo "Enter 3 digit number"
+read num
+x=$num
+rev=0
+c=0
+flag=0
+while [ $num -gt 0 ]
+do
+    ld=$(($num%10))
+    if [ $flag -eq 0 ] && [ $ld -eq 0 ]
+    then
+      c=$(($c+1))
+    else
+      flag=1
+      rev=$(($rev*10+$ld))
+    fi
+    num=$(($num/10))
+done
+echo "Reverse of "$x" is" 
+if [ $c -eq 1 ]
+then
+  echo "0"$rev
+elif [ $c -eq 2 ]
+then
+  echo "00"$rev
+else
+  echo $rev
+fi

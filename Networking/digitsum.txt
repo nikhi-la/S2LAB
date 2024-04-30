@@ -1,0 +1,20 @@
+echo "Enter number"
+read num
+x=$num
+if [ $num -lt 10 ]
+then
+  sum=$num
+else
+  while [ $num -gt  10 ]
+  do
+      sum=0
+      while [ $num -gt 0 ]
+      do
+          ld=$(($num%10))
+          sum=$(($sum+$ld))
+          num=$(($num/10))
+      done
+      num=$sum
+  done
+fi
+echo "The sum of digit in "$x" up to single digit : "$sum
