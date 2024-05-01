@@ -1,0 +1,22 @@
+#Armstrong or not
+cube()
+{
+  return $(($1*$1*$1))
+}
+
+read num
+x=$num
+sum=0
+while [ $num -gt 0 ]
+do
+    ld=$(($num%10))
+    cube $ld
+    sum=$(($sum+$?))
+    num=$(($num/10))
+done
+if [ $x -eq $sum ]
+then
+  echo $x" is an armstrong number"
+else
+  echo $x" is not an armstrong number"
+fi
