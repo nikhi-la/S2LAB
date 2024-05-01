@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Enter 3 digit number"
+read num
+x=$num
+rev=0
+while [ $num -gt 0 ]
+do
+    ld=$(($num%10))
+    rev=$(($rev*10+$ld))
+    num=$(($num/10))
+done
+if [ $x -eq $rev ]
+then
+  echo $x" is palindrome"
+else
+  echo $x" is not palindrome"
+fi
