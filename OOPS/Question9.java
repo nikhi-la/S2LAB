@@ -1,69 +1,38 @@
 import java.util.Scanner;
 
-interface Area
+class Area
 {
 	final double pi=3.14;
-
-	void area();
-	void perimeter();
+    //Circle
+	void area(int r)
+    {
+        System.out.println("Area : "+pi*r*r+"\n");
+    }
+    //Rectangle
+	void area(int l,int b)
+    {
+        System.out.println("Area : "+l*b+"\n");
+    }
 }
 
-class Circle implements Area
-{
-	int r;
-
-	Circle(int a)
-	{
-		r=a;
-	}
-	public void area()
-	{
-		System.out.println("\nArea : "+pi*r*r);
-	}
-
-	public void perimeter()
-	{
-		System.out.println("Perimeter : "+2*pi*r+"\n");
-	}
-} 
-
-class Rectangle implements Area
-{
-	int l,b;
-
-	Rectangle(int l,int b)
-	{
-		this.l=l;
-		this.b=b;
-	}
-	public void area()
-	{
-		System.out.println("\nArea : "+l*b);
-	}
-
-	public void perimeter()
-	{
-		System.out.println("Perimeter : "+2*(l+b)+"\n");
-	}
-} 
 
 class Question9
 {
 	public static void main(String args[])
 	{ 
 		Scanner s=new Scanner(System.in);
+        Area a=new Area();
 		int ch;
+
 		do{
 			System.out.println("1.Circle\n2.Rectangle\n3.Exit\nEnter Choice");
 			ch=s.nextInt();
 			if (ch==1)
 			{
-				System.out.println("\nCircle\n");
+				System.out.println("\nCircle");
 				System.out.println("Enter radius");
 				int r=s.nextInt();
-				Circle c=new Circle(r);
-				c.area();
-				c.perimeter();
+				a.area(r);
 				
 			}
 			else if (ch==2)
@@ -73,10 +42,7 @@ class Question9
 				int l=s.nextInt();
 				System.out.println("Enter breadth");
 				int b=s.nextInt();
-				Rectangle r=new Rectangle(l,b);
-				r.area();
-				r.perimeter();
-				
+				a.area(l,b);				
 			}
 			else if(ch==3)
 			{	
