@@ -53,7 +53,7 @@ class EvenNum implements Runnable
     }
 }
 
-class Program15
+class Question15
 {
     public static void main(String args[])
     {
