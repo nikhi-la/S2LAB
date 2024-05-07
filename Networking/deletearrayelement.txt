@@ -1,0 +1,4 @@
+#delete element from an array
+string=("apple" "orange" "grapes")
+unset string[1]
+echo ${string[@]}
