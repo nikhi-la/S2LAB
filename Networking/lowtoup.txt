@@ -1,0 +1,5 @@
+string="Hello, World!"
+lowercase_string="${string,,}"
+uppercase_string="${string^^}"
+echo "$lowercase_string"
+echo "$uppercase_string"
