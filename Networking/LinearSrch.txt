@@ -1,0 +1,19 @@
+#Linear search
+n=(12 40 30 10)
+l=${#n[@]}
+flag=0
+echo "Enter the number to be searched"
+read num
+for((i=0;i<l;++i))
+do
+  if [ ${n[$i]} -eq $num ]
+  then
+    echo "$num Found"
+    flag=1
+    break
+  fi
+done
+if [ $flag -eq 0  ]
+then
+  echo "$num not Found"
+fi
