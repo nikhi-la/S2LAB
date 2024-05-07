@@ -1,0 +1,9 @@
+#check if number b/w 15 and 60
+echo "Enter number"
+read n
+if (($n>15 & $n<60))
+then
+  echo "Number between 15 and 60"
+else
+  echo "Number not between 15 and 60"
+fi
