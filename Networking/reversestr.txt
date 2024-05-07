@@ -1,0 +1,9 @@
+#reverse a string
+s="Apple"
+l=$((${#s}-1))
+rev=""
+for((i=$l;i>=0;--i))
+do
+  rev=$rev${s:$i:1}
+done
+echo $rev
