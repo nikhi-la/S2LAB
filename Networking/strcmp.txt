@@ -1,0 +1,9 @@
+#compare string
+s1="apple"
+s2="apple"
+if [ $s1 == $s2 ]
+then
+  echo "Equal"
+else
+  echo "Not Equal"
+  fi
