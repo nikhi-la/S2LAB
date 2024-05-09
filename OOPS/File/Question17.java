@@ -1,16 +1,18 @@
 import java.io.*;
+import java.util.*;
 
 class Question17
 {
     public static void main(String args[]) throws IOException
     {
+        Scanner s1=new Scanner(System.in);
         InputStreamReader r=new InputStreamReader(System.in);
         BufferedReader br=new BufferedReader(r);
         
         FileWriter f=new FileWriter("D:/Nikhila/OOPS/File/input.txt");
         BufferedWriter bw=new BufferedWriter(f);
         System.out.println("Enter Numnber of lines");
-        int n=
+        int n=s1.nextInt();
         System.out.println("Enter Content(Enter end to exit)");
         String s;
         int i=0;
