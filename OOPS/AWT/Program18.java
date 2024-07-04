@@ -25,12 +25,12 @@ class Program18 extends Frame implements ActionListener{
 		L3 = new Label("Result");
 		T3 = new TextField(10);
 		
-        L1.setBounds(100,100,60,10);
+        L1.setBounds(100,100,60,20);
         add(L1);
         T1.setBounds(200,100,100,20);
         add(T1);
 
-        L2.setBounds(100,130,60,10);
+        L2.setBounds(100,130,60,20);
         add(L2);
         T2.setBounds(200,130,100,20);
         add(T2);
@@ -51,7 +51,7 @@ class Program18 extends Frame implements ActionListener{
         add(B4);
         B4.addActionListener(this);
 
-		L3.setBounds(100,230,60,10);
+		L3.setBounds(100,230,60,20);
         add(L3);
         T3.setBounds(200,230,100,20);
         add(T3);
