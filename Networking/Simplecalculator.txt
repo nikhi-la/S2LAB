@@ -17,7 +17,7 @@ do
 				;;
 			3)res=$(($num1*$num2))
 				;;
-			4)res=$(($num1/$num2))	
+			4)res=$(echo "scale=2; $num1/$num2" | bc )	
 				;;
 			5)res=$(($num1%$num2))
 				;;
