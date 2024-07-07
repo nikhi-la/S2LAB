@@ -1,0 +1,14 @@
+read -p "Enter array 1 : " -a array1
+read -p "Enter array 2 : " -a array2
+x=0
+for i in ${array1[@]}
+do
+  union[x]=$i
+  x=$((x+1))
+done
+for i in ${array2[@]}
+do
+  union[x]=$i
+  x=$((x+1))
+done
+echo ${union[@]}
