@@ -1,0 +1,12 @@
+read -p "Enter array 1 : " -a arr1
+echo "Array is ${arr1[@]}"
+read -p "Enter number to be inserted " num
+read -p "Enter position to be inserted " p 
+
+for((i=${#arr1[@]};i>$p;--i))
+do
+  x=$((i-1))
+  arr1[i]=${arr1[x]}
+done
+arr1[$p]=$num
+echo ${arr1[@]}
