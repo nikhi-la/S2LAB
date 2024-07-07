@@ -7,3 +7,15 @@ do
   rev=$rev${s:$i:1}
 done
 echo $rev
+
+#or
+
+#!/bin/bash
+read -p "Enter String :" s 
+rev=$(expr $s|rev)
+if [ $rev = $s ]
+then
+  echo $s" is palindrome"
+else
+  echo $s" is not palindrome"
+fi
