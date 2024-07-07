@@ -1,4 +1,5 @@
 read -p "Enter array 1 : " -a arr1
 sorted=($(printf "%s\n" "${arr1[@]}" | sort -r))
 echo "Sorted array : ${sorted[@]}"
+echo "Smallest Number : ${sorted[-1]}
 echo "Largest Number : ${sorted[0]}"
