@@ -3,3 +3,10 @@ lowercase_string="${string,,}"
 uppercase_string="${string^^}"
 echo "$lowercase_string"
 echo "$uppercase_string"
+
+#or
+s="Nikhila Baby"
+lower=($(printf "%s" "${s}" | tr [:upper:] [:lower:]))
+upper=($(printf "%s" "${s}" | tr [:lower:] [:upper:]))
+echo $lower
+echo $upper
