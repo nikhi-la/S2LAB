@@ -37,3 +37,11 @@
 
 #--->Display the lines of the file which doesn't have word 'hello'
       grep -iv 'hello' file.txt
+
+#-->a)create sample.txt.Number of words ,characters,lines
+    b) Count of occurence of hello
+    c) save the occurence to a new file
+        a) cat > sample.txt;wc sample.txt
+        b) grep -ic 'hello' sample.txt
+        c) grep -io 'hello' sample.txt > new.txt
+
