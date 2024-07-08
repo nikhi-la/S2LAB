@@ -1,0 +1,39 @@
+#--->List the number of ordinary files
+    find -type f | wc -l
+
+#--->Print the smallest salary employee from employee file
+    sort -k 2n employee.txt | head -n 1
+
+#--->Print the largest salary employee from employee file
+    sort -k 2nr employee.txt | head -n 1
+
+#--->Print the name of the smallest file 
+    ls -sr | sed -n '2p'
+
+#--->Print the name of the largest file 
+    ls -s | sed -n '2p'
+
+#--->Display files with only two letters in the filename
+    ls | grep -E '^.{2}.txt'
+            or
+    ls | grep -E '^.{2}$'
+
+#--->List the files and print first and seventh file
+    ls | sed -n '1p;7p'
+
+#--->Sort the contents of a file in descending order
+      sort -r file.txt
+
+#--->Convert contents of a file to uppercase
+      cat file.txt | tr [:lower:] [:upper:]
+                  or
+      cat file.txt | tr [a-z] [A-Z]
+
+#--->List of files which have word "hello"
+      grep -il "hello" *
+
+#--->List the first 3 files in the current directory with its permissions
+      ls -l | head -n 4
+
+#--->Display the lines of the file which doesn't have word 'hello'
+      grep -iv 'hello' file.txt
